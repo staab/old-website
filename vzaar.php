@@ -1,0 +1,31 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <iframe
+            allowFullScreen
+            allowTransparency="true"
+            class="vzaar-video-player"
+            frameborder="0"
+            height="382"
+            id="vzvd-1431513"
+            mozallowfullscreen
+            name="vzvd-1431513"
+            src="http://view.vzaar.com/1431513/player"
+            title="vzaar video player"
+            type="text/html" 
+            webkitAllowFullScreen 
+            width="576">
+        </iframe>
+        <iframe 
+            src="//view.vzaar.com/1431513/player"
+            width="522"
+            height="345"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+            allowTransparency="true">
+        </iframe>
+    </body>
+</html>

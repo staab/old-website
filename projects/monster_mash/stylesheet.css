@@ -1,0 +1,298 @@
+/* RESET */
+
+body, p, a, div, h1, h2, h3, h4, h5, h6, li, ul, ol, li, dl, dd, tr, td, th, span {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	color: black;
+	font-family: helvetica;
+	list-style-type: none;
+}
+
+/* GENERAL STYLES */
+
+body {
+	background-color: white;
+}
+
+h1, h3 {
+	text-align: center;
+}
+
+ul, li {
+	padding-left: 10px;
+}
+
+
+
+/* LAYOUT */
+
+a#instructions {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	padding: 10px;
+}
+
+a#instructions > div {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	visibility: hidden;
+	background-color: white;
+	border: 2px black solid;
+	padding: 10px;
+	z-index: 9999;
+}
+
+a#instructions:hover > div {
+	visibility: visible;
+}
+
+a#instructions li {
+	list-style-type: disc;
+	margin-top: 10px;
+	padding: 0px;
+}
+
+#game-wrapper {
+	width: 800px;
+	height: 600px;
+	position: relative;
+	background-color: #6c9;
+	border: 3px black solid;
+	margin: 0px auto;
+}
+
+#stats {
+	width: 300px;
+	position: relative;
+	margin: 10px;
+}
+
+#stats label {
+	float: left;
+}
+
+#level {
+	width: 100px;;
+	float: left;
+	background-color: red;
+}
+
+#progress {
+	width: 0px;
+	background-color: #6f6;
+}
+
+#progress-span {
+	padding: 0 10px;
+}
+
+#hero-status {
+	width: 300px;
+	position: absolute;
+	margin: 10px;
+	right: 0px;
+	margin-top: -120px;
+}
+
+#health {
+	width: 100px;
+	height: 14px;
+	border: black solid 2px;
+	margin-bottom: -3px;
+	float: right;
+	background-color: #6c9;
+}
+
+#health-level {
+	width: 100px;
+	height: 14px;
+	float: right;
+	background-color: red;
+}
+
+#mana {
+	width: 100px;
+	height: 14px;
+	border: black solid 2px;
+	clear: both;
+	float: right;
+	background-color: #6c9;
+}
+
+#mana-level {
+	width: 100px;
+	height: 14px;
+	float: right;
+	background-color: blue;
+}
+
+
+
+/* MODULES */
+
+.hero {
+	width: 40px;
+	height: 25px;
+	background-image: url('');
+	position: absolute;
+	top: 288px;
+	left: 380px;
+}
+
+.monster {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 40px;
+	height: 40px;
+	background-image: url('monster.png');
+}
+
+.treasure {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 40px;
+	height: 40px;
+	background-image: url('treasure.png');
+}
+
+.bomb {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 30px;
+	height: 40px;
+	background-image: url('bomb.png');
+}
+
+.hPotion {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 25px;
+	height: 40px;
+	background-image: url('hpotion.png');
+}
+
+#lightbox-backdrop {
+	position: absolute;
+	opacity: 0.5;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	z-index: 10;
+	background-color: black;
+}
+
+#lightbox-wrapper {
+	position: absolute;
+	margin: 100px 50%;
+}
+
+#lightbox {
+	position: absolute;
+	width: 510px;
+	height: 270px;
+	margin: 0 -275px;
+	z-index: 20;
+	background-color: white;
+	padding: 20px;
+}
+
+#lightbox label {
+	margin: 0 0 0 120;
+}
+
+#lightbox input[type="button"] {
+	position: absolute;
+	bottom: 10px;
+	left: 250px;
+}
+
+.char_choice {
+	float: left;
+	width: 150px;
+	margin: 10px;
+	height: 144px;
+}
+
+.char_choice img {
+	margin: 50px 55px;
+}
+
+.char_choice:hover {
+	background-color: #eff;
+}
+
+#stats-list {
+	width: 400px;
+	height: 430px;
+	position: relative;
+	background-color: #fec;
+	border: black solid 3px;
+	margin: 50px auto;
+	z-index: 9999;
+	padding: 10px;
+}
+
+#stats-list h4 {
+	display: inline;
+}
+
+#stats-list ul {
+	margin-bottom: 20px;
+	clear: both;
+}
+
+.list_header {
+	float: left;
+}
+
+.list_score {
+	float: right;
+}
+
+
+
+/* EXCEPTIONS */
+
+#restart-button{
+	position: absolute;
+	margin: -63px 355px;
+	width: 100px;
+	height: 20px;
+	text-align: center;
+	z-index: 9999;
+	background-color: white;
+	border: 2px black solid;
+	border-radius: 5px;
+}
+
+#restart-button:hover {
+	background-color: #edb;
+}
+
+.fireball {
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-color: #fa0;
+}
+
+.energyring {
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+

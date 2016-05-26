@@ -1,0 +1,29 @@
+
+.lightbox-backdrop {
+	position: absolute;
+	opacity: 0.5;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	z-index: 10;
+	background-color: black;
+}
+
+.lightbox-wrapper {
+	position: absolute;
+	margin: 100px 50%;
+}
+
+.lightbox {
+	position: absolute;
+	width: 400px;
+	height: 320px;
+	margin: 0 -200px;
+	z-index: 20;
+	background-color: white;
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 6px;
+	box-shadow: 0 0 20px black;
+}
